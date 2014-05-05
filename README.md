@@ -1,6 +1,8 @@
 zacl
 ====
 
+**STATUS: Early work-in-progress**
+
 ZACL is a high-level programming language, influenced by python, C, and perl.
 
 ### ZACL's A Concurrency Language.
