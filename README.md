@@ -20,7 +20,7 @@ This makes for an abstracted way to distribute data and/or processing across mul
 
 A trivial example:
 
-''class Example : RemoteJob {
+``class Example : RemoteJob {
     int i = 0;
     int j = 0;
     int get_sum() { return i + j; }
