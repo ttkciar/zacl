@@ -20,20 +20,20 @@ This makes for an abstracted way to distribute data and/or processing across mul
 
 A trivial example:
 
-``class Example : RemoteJob {
-    int i = 0;
-    int j = 0;
-    int get_sum() { return i + j; }
-}
+    class Example : RemoteJob {
+        int i = 0;
+        int j = 0;
+        int get_sum() { return i + j; }
+    }
 
-auto remote = new Example;  // instance of Example resides on a remote host
+    auto remote = new Example;  // instance of Example resides on a remote host
 
-remote.i++;  // Actually an RPC call telling remote instance to increment i
+    remote.i++;  // Actually an RPC call telling remote instance to increment i
 
-int sum = remote.get_sum();  // Actually an RPC call telling remote instance to run get_sum
+    int sum = remote.get_sum();  // Actually an RPC call telling remote instance to run get_sum
 
-auto sump = remote.async.get_sum();  // returns a Promise instance immediately while get_sum runs remotely
-``
+    auto sump = remote.async.get_sum();  // returns a Promise instance immediately while get_sum runs remotely
+
 
 ### ZACL for Rapid Development
 
